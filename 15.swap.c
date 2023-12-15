@@ -8,13 +8,13 @@
  * @line_number: The current line number in the Monty
  * bytecode file.
  */
-void _swop(stack_t **stack, unsigned int line_number)
+void _swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp;
 
 	if ((*stack)->next == NULL || (*stack)->next->next == NULL)
 	{
-		op_tok_error(briefstack_error(line_number, "swop"));
+		op_tok_error(briefstack_error(line_number, "swap"));
 		return;
 	}
 
